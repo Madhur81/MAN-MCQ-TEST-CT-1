@@ -1,0 +1,1305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CT1 Management — Final Exam</title>
+  <style>
+    :root{ --accent: #2563eb; --bg: #f8fafc; --card: #ffffff; --text: #1e293b; --green-bg: #dcfce7; --green-border: #22c55e; --green-text: #15803d; --red-bg: #fee2e2; --red-border: #ef4444; --red-text: #b91c1c; --radius: 12px; --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+    body{ font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); padding: 20px; line-height: 1.5; }
+    .container{ max-width: 800px; margin: 0 auto; }
+    header{ text-align: center; margin-bottom: 30px; }
+    h1{ font-size: 1.5rem; font-weight: 700; }
+    h2{ font-size: 1.25rem; color: var(--accent); margin-top: 40px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+    .controls{ display: flex; gap: 10px; justify-content: center; margin-bottom: 20px; position: sticky; top: 10px; z-index: 100; background: rgba(248, 250, 252, 0.9); backdrop-filter: blur(5px); padding: 10px; border-radius: var(--radius); }
+    .btn{ background: var(--accent); color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+    .btn:hover{ opacity: 0.9; }
+    .btn.secondary{ background: #64748b; }
+    .question{ background: var(--card); padding: 20px; border-radius: var(--radius); box-shadow: var(--shadow); margin-bottom: 16px; }
+    .qnum{ font-weight: 700; color: var(--accent); margin-bottom: 8px; }
+    .opts{ list-style: none; padding: 0; }
+    .opts li{ padding: 10px 12px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 8px; cursor: pointer; display: flex; gap: 10px; align-items: center; }
+    .opts li:hover:not(.disabled){ background: #f1f5f9; }
+    .correct-opt { background: var(--green-bg) !important; border-color: var(--green-border) !important; color: var(--green-text); }
+    .wrong-opt { background: var(--red-bg) !important; border-color: var(--red-border) !important; color: var(--red-text); }
+    .correct-highlight { border: 2px solid var(--green-border) !important; }
+    .feedback-msg { margin-left: auto; font-weight: bold; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>CT1 Management Final Exam (Comprehensive)</h1>
+    <div style="color: #64748b;">Total: <span id="totalCount">0</span></div>
+  </header>
+  <div class="controls">
+    <button class="btn" id="submitBtn">Submit Exam</button>
+    <button class="btn secondary" id="resetBtn">Reset</button>
+  </div>
+  <div id="quizArea">
+<h2>Lesson No. 1. Introduction to Management.</h2>
+
+    <div class="question">
+      <div class="qnum">1) The function of management that involves setting goals and deciding on future actions is called?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_0" value="a">Organizing</li><li data-key="b" data-correct="true"><input type="radio" name="q_0" value="b">Planning</li><li data-key="c"><input type="radio" name="q_0" value="c">Leading</li><li data-key="d"><input type="radio" name="q_0" value="d">Controlling</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">2) The process of arranging resources like manpower, materials, and finances in a structured manner refers to?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_1" value="a">Organizing</li><li data-key="b"><input type="radio" name="q_1" value="b">Decision-making</li><li data-key="c"><input type="radio" name="q_1" value="c">Innovation</li><li data-key="d"><input type="radio" name="q_1" value="d">Negotiation</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">3) The principle that suggests employees should report to only one superior is called?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_2" value="a">Unity of Direction</li><li data-key="b" data-correct="true"><input type="radio" name="q_2" value="b">Unity of Command</li><li data-key="c"><input type="radio" name="q_2" value="c">Scalar Chain</li><li data-key="d"><input type="radio" name="q_2" value="d">Centralization</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">4) principle highlights the need for fair treatment and respect for all employees?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_3" value="a">Discipline</li><li data-key="b"><input type="radio" name="q_3" value="b">Authority and Responsibility</li><li data-key="c" data-correct="true"><input type="radio" name="q_3" value="c">Equity</li><li data-key="d"><input type="radio" name="q_3" value="d">Initiative</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">5) The skill that helps individuals use time efficiently is .</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_4" value="a">Self-awareness</li><li data-key="b" data-correct="true"><input type="radio" name="q_4" value="b">Time management</li><li data-key="c"><input type="radio" name="q_4" value="c">Stress management</li><li data-key="d"><input type="radio" name="q_4" value="d">Decision-making</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">6) A drawback of multitasking is .</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_5" value="a">Improving productivity</li><li data-key="b"><input type="radio" name="q_5" value="b">Enhancing accuracy in complex tasks</li><li data-key="c" data-correct="true"><input type="radio" name="q_5" value="c">Reducing focus and leading to errors</li><li data-key="d"><input type="radio" name="q_5" value="d">Ensuring perfect time management</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">7) The ability to reach mutually beneficial agreements through discussion and compromise is called</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_6" value="a">Leadership</li><li data-key="c" data-correct="true"><input type="radio" name="q_6" value="c">Negotiation skills</li><li data-key="b"><input type="radio" name="q_6" value="b">Conflict resolution</li><li data-key="d"><input type="radio" name="q_6" value="d">Feedback</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">8) Who authored the Arthshastra?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_7" value="a">bAshok</li><li data-key="a"><input type="radio" name="q_7" value="a"></li><li data-key="c"><input type="radio" name="q_7" value="c">Kautilya(Chanaky</li><li data-key="a"><input type="radio" name="q_7" value="a"></li><li data-key="d"><input type="radio" name="q_7" value="d">Kalidas 9)Early Indian Industrialists emphasized employee welfare including______.</li><li data-key="a"><input type="radio" name="q_7" value="a">Only wages</li><li data-key="b" data-correct="true"><input type="radio" name="q_7" value="b">Housing,education &healthcare.</li><li data-key="c"><input type="radio" name="q_7" value="c">Military Training</li><li data-key="d"><input type="radio" name="q_7" value="d">Free travel abroa</li><li data-key="d"><input type="radio" name="q_7" value="d">10)Examples of PSUs needing professional management include___________</li><li data-key="a"><input type="radio" name="q_7" value="a">Flipcart, Paytm, Zomato</li><li data-key="b" data-correct="true"><input type="radio" name="q_7" value="b">BHEL, ONGC,SAIL.</li><li data-key="c"><input type="radio" name="q_7" value="c">HUL,ITC,Maruti.</li><li data-key="d"><input type="radio" name="q_7" value="d">Infosys,Wipro,TCS</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">11) .................. of the following is NOT a stage in Kurt Lewin‟s Change Management Model.</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_8" value="a">Unfreezing</li><li data-key="c"><input type="radio" name="q_8" value="c">Changing</li><li data-key="b" data-correct="true"><input type="radio" name="q_8" value="b">Freezing</li><li data-key="d"><input type="radio" name="q_8" value="d">Refreezing</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">12. Resistance to change in organizations can be caused by……………</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_9" value="a">Fear of the unknown</li><li data-key="b"><input type="radio" name="q_9" value="b">Lack of trust in leadership</li><li data-key="c"><input type="radio" name="q_9" value="c">Poor communication</li><li data-key="d" data-correct="true"><input type="radio" name="q_9" value="d">All of the above</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">13) The process of arranging resources like manpower, materials, and finances in a structured manner refers to?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_10" value="a">Organizing</li><li data-key="b"><input type="radio" name="q_10" value="b">Decision-making</li><li data-key="c"><input type="radio" name="q_10" value="c">Innovation</li><li data-key="d"><input type="radio" name="q_10" value="d">Negotiation</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">14. ........................ is NOT a key responsibility of a product manager?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_11" value="a">Defining product vision</li><li data-key="b"><input type="radio" name="q_11" value="b">Conducting market research</li><li data-key="c" data-correct="true"><input type="radio" name="q_11" value="c">Setting financial policies</li><li data-key="d"><input type="radio" name="q_11" value="d">Coordinating with development teams</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">15. Sustainable product design primarily aims to……………….</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_12" value="a">Reduce environmental impact while ensuring profitability</li><li data-key="b"><input type="radio" name="q_12" value="b">Maximize short-term profits</li><li data-key="c"><input type="radio" name="q_12" value="c">Use only expensive eco-friendly materials</li><li data-key="d"><input type="radio" name="q_12" value="d">Increase production speed regardless of consequences</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">16. ............... is an example of an eco-friendly packaging approach.</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_13" value="a">Using single-use plastic for cost reduction</li><li data-key="b" data-correct="true"><input type="radio" name="q_13" value="b">Designing packaging that is biodegradable and reusable</li><li data-key="c"><input type="radio" name="q_13" value="c">Increasing package size to make products look bigger</li><li data-key="d"><input type="radio" name="q_13" value="d">Adding extra layers of plastic wrapping for branding</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">17) Artha Shastra mainly deals with:</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_14" value="a">Economics</li><li data-key="b"><input type="radio" name="q_14" value="b">Politics</li><li data-key="c"><input type="radio" name="q_14" value="c">Administration</li><li data-key="d" data-correct="true"><input type="radio" name="q_14" value="d">All of the above</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">18) Which concept is strongly emphasized in Indian Knowledge System (IKS)? A) Ethical leadership B) Human values C) Sustainability D) All of the above</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">19) Gurukul system focused on:</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_16" value="a">Discipline</li><li data-key="b"><input type="radio" name="q_16" value="b">Moral education</li><li data-key="c"><input type="radio" name="q_16" value="c">Skill development</li><li data-key="d" data-correct="true"><input type="radio" name="q_16" value="d">All of the above</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">20) Supervisory level is also known as:</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_17" value="a">Top management</li><li data-key="b"><input type="radio" name="q_17" value="b">Middle management</li><li data-key="c" data-correct="true"><input type="radio" name="q_17" value="c">Operational management</li><li data-key="d"><input type="radio" name="q_17" value="d">Strategic management</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">21) Supervisors act as a link between: A) Workers and customers B) Workers and management C) Management and suppliers D) Customers and suppliers</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">22) Self-awareness means:</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_19" value="a">Knowing strengths and weaknesses</li><li data-key="b"><input type="radio" name="q_19" value="b">Knowing others</li><li data-key="c"><input type="radio" name="q_19" value="c">Knowing environment</li><li data-key="d"><input type="radio" name="q_19" value="d">Knowing technology</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">23) Management is a __________ process. A) One-time B) Continuous improvement C) Random D) Temporary</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">24) Who is known as the father of scientific management?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_21" value="a">Henri Fayol</li><li data-key="b" data-correct="true"><input type="radio" name="q_21" value="b">F.W. Taylor</li><li data-key="c"><input type="radio" name="q_21" value="c">Max Weber</li><li data-key="d"><input type="radio" name="q_21" value="d">Elton Mayo</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">25) Goal setting mainly helps in:</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_22" value="a">Direction</li><li data-key="b"><input type="radio" name="q_22" value="b">Motivation</li><li data-key="c"><input type="radio" name="q_22" value="c">Performance measurement</li><li data-key="d" data-correct="true"><input type="radio" name="q_22" value="d">All of the above</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">26) Which principle states “there should be one boss for one employee”?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_23" value="a">Division of work</li><li data-key="b"><input type="radio" name="q_23" value="b">Unity of direction</li><li data-key="c" data-correct="true"><input type="radio" name="q_23" value="c">Unity of command</li><li data-key="d"><input type="radio" name="q_23" value="d">Equity</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">27) Which managerial skill is required to handle conflicts?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_24" value="a">Technical skill</li><li data-key="b" data-correct="true"><input type="radio" name="q_24" value="b">Negotiation skill</li><li data-key="c"><input type="radio" name="q_24" value="c">Conceptual skill</li><li data-key="d"><input type="radio" name="q_24" value="d">Mechanical skill</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">28) Management helps in achieving: A) Personal goals only B) Organizational goals C) Government goals D) Political goals</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">29) Which is NOT a function of management? A) Planning B) Organizing C) Accounting D) Controlling</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">30) Fayol gave how many principles of management?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_27" value="a">7</li><li data-key="b"><input type="radio" name="q_27" value="b">10</li><li data-key="c"><input type="radio" name="q_27" value="c">12</li><li data-key="d" data-correct="true"><input type="radio" name="q_27" value="d">14</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">31) Indian Knowledge System emphasizes:</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_28" value="a">Ethical leadership</li><li data-key="b"><input type="radio" name="q_28" value="b">Sustainable management</li><li data-key="c"><input type="radio" name="q_28" value="c">People-centric approach</li><li data-key="d" data-correct="true"><input type="radio" name="q_28" value="d">All of the above</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">32) Self-awareness means understanding one’s own:</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_29" value="a">Strengths and weaknesses</li><li data-key="b"><input type="radio" name="q_29" value="b">Salary</li><li data-key="c"><input type="radio" name="q_29" value="c">Authority</li><li data-key="d"><input type="radio" name="q_29" value="d">Position</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">33) Which of the following best explains why management is considered universal?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_30" value="a">It is required in all types of organizations</li><li data-key="b"><input type="radio" name="q_30" value="b">It is needed only in large companies</li><li data-key="c"><input type="radio" name="q_30" value="c">It applies only to private firms</li><li data-key="d"><input type="radio" name="q_30" value="d">It is only for government offices</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">34) Why is negotiation skill important for managers?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_31" value="a">To force employees to follow rules</li><li data-key="b" data-correct="true"><input type="radio" name="q_31" value="b">To reach mutually beneficial agreements</li><li data-key="c"><input type="radio" name="q_31" value="c">To avoid communication</li><li data-key="d"><input type="radio" name="q_31" value="d">To punish employees</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">35) Which statement about self-motivation is correct?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_32" value="a">It depends on external rewards</li><li data-key="b" data-correct="true"><input type="radio" name="q_32" value="b">It comes from internal drive and commitment</li><li data-key="c"><input type="radio" name="q_32" value="c">It is enforced by supervision</li><li data-key="d"><input type="radio" name="q_32" value="d">It is not important at work</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">36) Which Fayol principle suggests that tasks should be divided among individuals to improve efficiency?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_33" value="a">Unity of Command</li><li data-key="b" data-correct="true"><input type="radio" name="q_33" value="b">Division of Work</li><li data-key="c"><input type="radio" name="q_33" value="c">Scalar Chain</li><li data-key="d"><input type="radio" name="q_33" value="d">Equity</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">37) Feedback from supervisors and peers helps employees to:</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_34" value="a">Correct mistakes</li><li data-key="b"><input type="radio" name="q_34" value="b">Improve performance</li><li data-key="c"><input type="radio" name="q_34" value="c">Increase motivation</li><li data-key="d" data-correct="true"><input type="radio" name="q_34" value="d">All of the above</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">38) Which skill is essential for handling disagreements constructively in the workplace?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_35" value="a">Technical skill</li><li data-key="b" data-correct="true"><input type="radio" name="q_35" value="b">Conflict resolution</li><li data-key="c"><input type="radio" name="q_35" value="c">Accounting skill</li><li data-key="d"><input type="radio" name="q_35" value="d">Leadership skill</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">39) Which of the following best describes the main focus of scientific management?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_36" value="a">Improving worker efficiency using standardization and time study</li><li data-key="b"><input type="radio" name="q_36" value="b">Increasing employee salaries only</li><li data-key="c"><input type="radio" name="q_36" value="c">Avoiding supervision</li><li data-key="d"><input type="radio" name="q_36" value="d">Focusing on marketing</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">40) Which level of management is mainly responsible for interpreting policies and coordinating middle-level managers?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_37" value="a">Top level management</li><li data-key="b" data-correct="true"><input type="radio" name="q_37" value="b">Middle level management</li><li data-key="c"><input type="radio" name="q_37" value="c">Supervisory management</li><li data-key="d"><input type="radio" name="q_37" value="d">Operational management 41)Which function of management involves monitoring performance and taking corrective action to ensure goals are achieved?</li><li data-key="a"><input type="radio" name="q_37" value="a">Planning</li><li data-key="b" data-correct="true"><input type="radio" name="q_37" value="b">Controlling</li><li data-key="c"><input type="radio" name="q_37" value="c">Organizing</li><li data-key="d"><input type="radio" name="q_37" value="d">Staffing</li>
+      </ul>
+    </div>
+<h2>UNIT–2 : Product, Operations & Project Management (50 MCQs)</h2>
+
+    <div class="question">
+      <div class="qnum">1. Creativity means</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_38" value="a">Doing work regularly</li><li data-key="b" data-correct="true"><input type="radio" name="q_38" value="b">Generating new ideas</li><li data-key="c"><input type="radio" name="q_38" value="c">Following instructions</li><li data-key="d"><input type="radio" name="q_38" value="d">Copying others</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">2. Brainstorming is a technique used for</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_39" value="a">Training</li><li data-key="b"><input type="radio" name="q_39" value="b">Controlling</li><li data-key="c" data-correct="true"><input type="radio" name="q_39" value="c">Generating creative ideas</li><li data-key="d"><input type="radio" name="q_39" value="d">Budgeting</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">3. Which creativity technique focuses on reversing the problem?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_40" value="a">Brainstorming</li><li data-key="b"><input type="radio" name="q_40" value="b">Checklist</li><li data-key="c" data-correct="true"><input type="radio" name="q_40" value="c">Reverse brainstorming</li><li data-key="d"><input type="radio" name="q_40" value="d">Six sigma</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">4. Six Thinking Hats technique was developed by</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_41" value="a">Taylor</li><li data-key="b"><input type="radio" name="q_41" value="b">Fayol</li><li data-key="c" data-correct="true"><input type="radio" name="q_41" value="c"></li><li data-key="c" data-correct="true"><input type="radio" name="q_41" value="c">Edward de Bono</li><li data-key="d"><input type="radio" name="q_41" value="d">Drucker</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">5. Morphological analysis is used for</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_42" value="a">Cost control</li><li data-key="b"><input type="radio" name="q_42" value="b">Quality check</li><li data-key="c" data-correct="true"><input type="radio" name="q_42" value="c">Systematic idea generation</li><li data-key="d"><input type="radio" name="q_42" value="d">Recruitment</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">6. Innovation refers to</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_43" value="a">Idea generation only</li><li data-key="b" data-correct="true"><input type="radio" name="q_43" value="b">Implementation of creative ideas</li><li data-key="c"><input type="radio" name="q_43" value="c">Training employees</li><li data-key="d"><input type="radio" name="q_43" value="d">Selling products</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">7. New Product Development (NPD) starts with</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_44" value="a">Testing</li><li data-key="b"><input type="radio" name="q_44" value="b">Commercialization</li><li data-key="c" data-correct="true"><input type="radio" name="q_44" value="c">Idea generation</li><li data-key="d"><input type="radio" name="q_44" value="d">Marketing</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">8. Which stage checks feasibility of a new product?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_45" value="a">Idea generation</li><li data-key="b" data-correct="true"><input type="radio" name="q_45" value="b">Idea screening</li><li data-key="c"><input type="radio" name="q_45" value="c">Launch</li><li data-key="d"><input type="radio" name="q_45" value="d">Advertising</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">9. Change management deals with</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_46" value="a">Machine maintenance</li><li data-key="b"><input type="radio" name="q_46" value="b">Employee salary</li><li data-key="c" data-correct="true"><input type="radio" name="q_46" value="c">Managing change in organization</li><li data-key="d"><input type="radio" name="q_46" value="d">Product packaging</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">10. Product management mainly focuses on</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_47" value="a">Workers</li><li data-key="b"><input type="radio" name="q_47" value="b">Machines</li><li data-key="c" data-correct="true"><input type="radio" name="q_47" value="c">Product life cycle</li><li data-key="d"><input type="radio" name="q_47" value="d">Accounts</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">11. Product life cycle includes</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_48" value="a">Growth only</li><li data-key="b"><input type="radio" name="q_48" value="b">Introduction only</li><li data-key="c"><input type="radio" name="q_48" value="c">Decline only</li><li data-key="d" data-correct="true"><input type="radio" name="q_48" value="d">Introduction, Growth, Maturity, Decline</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">12. Agile product management emphasizes</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_49" value="a">Rigid planning</li><li data-key="b"><input type="radio" name="q_49" value="b">Heavy documentation</li><li data-key="c" data-correct="true"><input type="radio" name="q_49" value="c">Flexibility and quick response</li><li data-key="d"><input type="radio" name="q_49" value="d">Fixed design</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">13. Agile manifesto focuses on</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_50" value="a">Processes over people</li><li data-key="b"><input type="radio" name="q_50" value="b">Tools over individuals</li><li data-key="c" data-correct="true"><input type="radio" name="q_50" value="c">Individuals and interactions over processes</li><li data-key="d"><input type="radio" name="q_50" value="d">Documentation over working product</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">14. Agile methodology is best suited for</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_51" value="a">Long fixed projects</li><li data-key="b"><input type="radio" name="q_51" value="b">Government projects</li><li data-key="c" data-correct="true"><input type="radio" name="q_51" value="c">Dynamic and changing projects</li><li data-key="d"><input type="radio" name="q_51" value="d">Manual work</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">15. Project is a</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_52" value="a">Routine activity</li><li data-key="b" data-correct="true"><input type="radio" name="q_52" value="b">Temporary activity with specific goal</li><li data-key="c"><input type="radio" name="q_52" value="c">Continuous process</li><li data-key="d"><input type="radio" name="q_52" value="d">Daily operation</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">16. Project management mainly deals with</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_53" value="a">Production</li><li data-key="b" data-correct="true"><input type="radio" name="q_53" value="b">Planning, executing and controlling projects</li><li data-key="c"><input type="radio" name="q_53" value="c">Recruitment</li><li data-key="d"><input type="radio" name="q_53" value="d">Marketing</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">17. Which is NOT an objective of project management?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_54" value="a">Timely completion . Cost control</li><li data-key="c"><input type="radio" name="q_54" value="c">Quality achievement</li><li data-key="d" data-correct="true"><input type="radio" name="q_54" value="d">Employee promotion</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">18. 4Ps of project management include</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_55" value="a">Plan, Process, Product, Profit</li><li data-key="b" data-correct="true"><input type="radio" name="q_55" value="b">People, Product, Process, Project</li><li data-key="c"><input type="radio" name="q_55" value="c">Power, Process, Product, Plan</li><li data-key="d"><input type="radio" name="q_55" value="d">Price, Place, Promotion, Product</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">19. Project life cycle phases are</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_56" value="a">Start and end</li><li data-key="b"><input type="radio" name="q_56" value="b">Planning only</li><li data-key="c" data-correct="true"><input type="radio" name="q_56" value="c">Initiation, Planning, Execution, Closure</li><li data-key="d"><input type="radio" name="q_56" value="d">Control only</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">20. PERT stands for</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_57" value="a">Project Evaluation Review Tool</li><li data-key="b" data-correct="true"><input type="radio" name="q_57" value="b">Program Evaluation and Review Technique</li><li data-key="c"><input type="radio" name="q_57" value="c">Project Execution Review Technique</li><li data-key="d"><input type="radio" name="q_57" value="d">Planning Evaluation Review Tool</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">21. CPM stands for</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_58" value="a">Cost Planning Method</li><li data-key="b" data-correct="true"><input type="radio" name="q_58" value="b">Critical Path Method</li><li data-key="c"><input type="radio" name="q_58" value="c">Control Path Method</li><li data-key="d"><input type="radio" name="q_58" value="d">Central Planning Method</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">22. CPM focuses mainly on</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_59" value="a">Time uncertainty</li><li data-key="b" data-correct="true"><input type="radio" name="q_59" value="b">Cost and time optimization</li><li data-key="c"><input type="radio" name="q_59" value="c">Creativity</li><li data-key="d"><input type="radio" name="q_59" value="d">Quality circle</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">23. PERT is mainly used when</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_60" value="a">Time is fixed</li><li data-key="b"><input type="radio" name="q_60" value="b">Cost is fixed</li><li data-key="c" data-correct="true"><input type="radio" name="q_60" value="c">Time estimates are uncertain</li><li data-key="d"><input type="radio" name="q_60" value="d">Work is repetitive</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">24. Critical path represents</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_61" value="a">Shortest path</li><li data-key="b" data-correct="true"><input type="radio" name="q_61" value="b">Longest duration path</li><li data-key="c"><input type="radio" name="q_61" value="c">Cheapest path</li><li data-key="d"><input type="radio" name="q_61" value="d">Random path</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">25. Gantt chart is used for</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_62" value="a">Cost estimation</li><li data-key="b"><input type="radio" name="q_62" value="b">Quality control</li><li data-key="c" data-correct="true"><input type="radio" name="q_62" value="c">Scheduling activities</li><li data-key="d"><input type="radio" name="q_62" value="d">Recruitment</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">26. Gantt chart shows</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_63" value="a">Cost vs profit</li><li data-key="b"><input type="radio" name="q_63" value="b">Quality vs time</li><li data-key="c" data-correct="true"><input type="radio" name="q_63" value="c">Activities vs time</li><li data-key="d"><input type="radio" name="q_63" value="d">People vs work</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">27. Which tool is best for monitoring project progress?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_64" value="a">Checklist</li><li data-key="b" data-correct="true"><input type="radio" name="q_64" value="b">Gantt chart</li><li data-key="c"><input type="radio" name="q_64" value="c">Brainstorming</li><li data-key="d"><input type="radio" name="q_64" value="d">Kaizen</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">28. Budget means</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_65" value="a">Profit estimation</li><li data-key="b" data-correct="true"><input type="radio" name="q_65" value="b">Financial plan of project</li><li data-key="c"><input type="radio" name="q_65" value="c">Sales plan</li><li data-key="d"><input type="radio" name="q_65" value="d">Marketing plan</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">29. Estimation in project management refers to</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_66" value="a">Guessing</li><li data-key="b" data-correct="true"><input type="radio" name="q_66" value="b">Forecasting resources and cost</li><li data-key="c"><input type="radio" name="q_66" value="c">Recruitment</li><li data-key="d"><input type="radio" name="q_66" value="d">Supervision</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">30. Operations management deals with</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_67" value="a">Finance</li><li data-key="b"><input type="radio" name="q_67" value="b">Marketing</li><li data-key="c" data-correct="true"><input type="radio" name="q_67" value="c">Production of goods and services</li><li data-key="d"><input type="radio" name="q_67" value="d">HR</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">31. Operations management aims at</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_68" value="a">High cost</li><li data-key="b"><input type="radio" name="q_68" value="b">Low quality</li><li data-key="c" data-correct="true"><input type="radio" name="q_68" value="c">Efficient use of resources</li><li data-key="d"><input type="radio" name="q_68" value="d">Delays</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">32. Which is an input in operations system?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_69" value="a">Output</li><li data-key="b"><input type="radio" name="q_69" value="b">Feedback</li><li data-key="c" data-correct="true"><input type="radio" name="q_69" value="c">Raw material</li><li data-key="d"><input type="radio" name="q_69" value="d">Finished goods</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">33. Which is an output of operations system?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_70" value="a">Machines</li><li data-key="b"><input type="radio" name="q_70" value="b">Workers</li><li data-key="c" data-correct="true"><input type="radio" name="q_70" value="c">Goods and services</li><li data-key="d"><input type="radio" name="q_70" value="d">Raw material</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">34. Productivity is defined as</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_71" value="a">Output only</li><li data-key="b"><input type="radio" name="q_71" value="b">Input only</li><li data-key="c" data-correct="true"><input type="radio" name="q_71" value="c">Output ÷ Input</li><li data-key="d"><input type="radio" name="q_71" value="d">Profit ÷ Cost</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">35. Higher productivity means</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_72" value="a">More waste</li><li data-key="b" data-correct="true"><input type="radio" name="q_72" value="b">More output with less input</li><li data-key="c"><input type="radio" name="q_72" value="c">More cost</li><li data-key="d"><input type="radio" name="q_72" value="d">Poor quality</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">36. Project delay mainly affects</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_73" value="a">Quality only</li><li data-key="b"><input type="radio" name="q_73" value="b">Cost only</li><li data-key="c" data-correct="true"><input type="radio" name="q_73" value="c">Time and cost</li><li data-key="d"><input type="radio" name="q_73" value="d">Workers only</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">37. Risk in project means</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_74" value="a">Guarantee of loss</li><li data-key="b" data-correct="true"><input type="radio" name="q_74" value="b">Uncertainty of outcome</li><li data-key="c"><input type="radio" name="q_74" value="c">Fixed loss</li><li data-key="d"><input type="radio" name="q_74" value="d">Sure profit</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">38. Project risk management includes</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_75" value="a">Ignoring risk</li><li data-key="b" data-correct="true"><input type="radio" name="q_75" value="b">Identifying and controlling risk</li><li data-key="c"><input type="radio" name="q_75" value="c">Increasing cost</li><li data-key="d"><input type="radio" name="q_75" value="d">Delaying project</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">39. Feasibility study checks</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_76" value="a">Worker efficiency</li><li data-key="b" data-correct="true"><input type="radio" name="q_76" value="b">Practicality of project</li><li data-key="c"><input type="radio" name="q_76" value="c">Promotion</li><li data-key="d"><input type="radio" name="q_76" value="d">Discipline</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">40. Which chart uses bars to represent activities?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_77" value="a">PERT</li><li data-key="b"><input type="radio" name="q_77" value="b">CPM</li><li data-key="c" data-correct="true"><input type="radio" name="q_77" value="c">Gantt chart</li><li data-key="d"><input type="radio" name="q_77" value="d">Flow chart</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">41. Agile approach works on</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_78" value="a">Big releases</li><li data-key="b"><input type="radio" name="q_78" value="b">Annual delivery</li><li data-key="c" data-correct="true"><input type="radio" name="q_78" value="c">Small iterations</li><li data-key="d"><input type="radio" name="q_78" value="d">One-time delivery</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">42. Change management resistance comes mainly from</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_79" value="a">Machines</li><li data-key="b"><input type="radio" name="q_79" value="b">Market</li><li data-key="c" data-correct="true"><input type="radio" name="q_79" value="c">Employees</li><li data-key="d"><input type="radio" name="q_79" value="d">Customers</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">43. Which tool is network based?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_80" value="a">Gantt chart</li><li data-key="b"><input type="radio" name="q_80" value="b">Checklist</li><li data-key="c" data-correct="true"><input type="radio" name="q_80" value="c">PERT</li><li data-key="d"><input type="radio" name="q_80" value="d">Histogram</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">44. Project scope defines</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_81" value="a">Cost only</li><li data-key="b"><input type="radio" name="q_81" value="b">Time only</li><li data-key="c" data-correct="true"><input type="radio" name="q_81" value="c">Work to be done</li><li data-key="d"><input type="radio" name="q_81" value="d">Salary</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">45. Successful project depends mainly on</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_82" value="a">Luck</li><li data-key="b" data-correct="true"><input type="radio" name="q_82" value="b">Proper planning and control</li><li data-key="c"><input type="radio" name="q_82" value="c">Extra cost</li><li data-key="d"><input type="radio" name="q_82" value="d">Delay</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">46. Operations management improves</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_83" value="a">Waste</li><li data-key="b"><input type="radio" name="q_83" value="b">Delay</li><li data-key="c" data-correct="true"><input type="radio" name="q_83" value="c">Efficiency and productivity</li><li data-key="d"><input type="radio" name="q_83" value="d">Complaints</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">47. Which technique helps in idea evaluation?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_84" value="a">Brainstorming</li><li data-key="b" data-correct="true"><input type="radio" name="q_84" value="b">Checklist</li><li data-key="c"><input type="radio" name="q_84" value="c">CPM</li><li data-key="d"><input type="radio" name="q_84" value="d">Gantt chart</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">48. Agile encourages</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_85" value="a">Strict control</li><li data-key="b"><input type="radio" name="q_85" value="b">Fixed scope</li><li data-key="c" data-correct="true"><input type="radio" name="q_85" value="c">Customer collaboration</li><li data-key="d"><input type="radio" name="q_85" value="d">Heavy documentation</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">49. Project closure phase includes</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_86" value="a">Planning</li><li data-key="b"><input type="radio" name="q_86" value="b">Execution</li><li data-key="c" data-correct="true"><input type="radio" name="q_86" value="c">Final review and handover</li><li data-key="d"><input type="radio" name="q_86" value="d">Budgeting</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">50. The main aim of project management is</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_87" value="a">Increase workload</li><li data-key="b"><input type="radio" name="q_87" value="b">Delay project</li><li data-key="c" data-correct="true"><input type="radio" name="q_87" value="c">Achieve objectives within time, cost & quality</li><li data-key="d"><input type="radio" name="q_87" value="d">Reduce manpower</li>
+      </ul>
+    </div>
+<h2>Lesson no. 3. Management Practices.</h2>
+
+    <div class="question">
+      <div class="qnum">1. In the quality circle process, which phase immediately follows “initial problem solving” and involves gaining management buy-in for suggestions?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_88" value="a">Start-up phase</li><li data-key="b" data-correct="true"><input type="radio" name="q_88" value="b">Approval of initial suggestions</li><li data-key="c"><input type="radio" name="q_88" value="c">Implementation</li><li data-key="d"><input type="radio" name="q_88" value="d">Expansion of problem-solving</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">2. Kaizen emphasizes process improvement over results; what principle specifically addresses refining root causes rather than symptoms?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_89" value="a">Standardization</li><li data-key="b" data-correct="true"><input type="radio" name="q_89" value="b">Focus on Process, Not Just Results</li><li data-key="c"><input type="radio" name="q_89" value="c">Empowerment and Ownership</li><li data-key="d"><input type="radio" name="q_89" value="d">PDCA Cycle</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">3. During Six Sigma's Analyze phase of DMAIC, teams use statistical tools to validate what?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_90" value="a">Improvement actions</li><li data-key="b" data-correct="true"><input type="radio" name="q_90" value="b">Root causes of the problem</li><li data-key="c"><input type="radio" name="q_90" value="c">Control plans</li><li data-key="d"><input type="radio" name="q_90" value="d">Measurement systems only</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">4. Which TQM tool relates problems to causes in categories like materials, methods, and human factors?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_91" value="a">Pareto chart</li><li data-key="b" data-correct="true"><input type="radio" name="q_91" value="b">Cause-and-effect diagram</li><li data-key="c"><input type="radio" name="q_91" value="c">Histogram</li><li data-key="d"><input type="radio" name="q_91" value="d">Control chart</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">5. Kaizen's employee involvement step includes compiling issues from feedback; what follows solution generation?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_92" value="a">Problem identification</li><li data-key="b" data-correct="true"><input type="radio" name="q_92" value="b">Solution testing via pilots</li><li data-key="c"><input type="radio" name="q_92" value="c">Results analysis</li><li data-key="d"><input type="radio" name="q_92" value="d">Adoption organization-wide</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">6. In quality circles, after “developing solution,” what step foresees employee resistance?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_93" value="a">Data analysis on root cause</li><li data-key="b" data-correct="true"><input type="radio" name="q_93" value="b">Foreseeing possible resistance</li><li data-key="c"><input type="radio" name="q_93" value="c">Trial and checking performance</li><li data-key="d"><input type="radio" name="q_93" value="d">Follow-up/review</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">7. Six Sigma allows how many defects per million opportunities at its highest level?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_94" value="a">3.4</li><li data-key="b"><input type="radio" name="q_94" value="b">6.0</li><li data-key="c"><input type="radio" name="q_94" value="c">100</li><li data-key="d"><input type="radio" name="q_94" value="d">1,000</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">8. TQM's American model contrasts ISO 9000; which is associated with Deming's contributions?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_95" value="a">Malcolm Baldrige</li><li data-key="b"><input type="radio" name="q_95" value="b">EFQM</li><li data-key="c"><input type="radio" name="q_95" value="c">ISO 9000</li><li data-key="d"><input type="radio" name="q_95" value="d">Shingo Prize</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">9. Kaizen benefits include waste reduction; which is NOT a key advantage?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_96" value="a">Improved efficiency</li><li data-key="b"><input type="radio" name="q_96" value="b">Enhanced employee engagement</li><li data-key="c" data-correct="true"><input type="radio" name="q_96" value="c">Fixed processes without iteration</li><li data-key="d"><input type="radio" name="q_96" value="d">Better quality</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">10. In DMAIC Improve phase, teams prioritize actions based on what?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_97" value="a">Root causes identified</li><li data-key="b"><input type="radio" name="q_97" value="b">Control monitoring</li><li data-key="c"><input type="radio" name="q_97" value="c">Define goals</li><li data-key="d"><input type="radio" name="q_97" value="d">Measure data only</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">11. Quality circles originated in Japan; what threatens the “expansion” stage?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_98" value="a">Lack of initial suggestions</li><li data-key="b" data-correct="true"><input type="radio" name="q_98" value="b">Complacency after implementation</li><li data-key="c"><input type="radio" name="q_98" value="c">Start-up delays</li><li data-key="d"><input type="radio" name="q_98" value="d">Problem definition</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">12. Which Kaizen principle instills ownership by empowering workers to implement solutions?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_99" value="a">Focus on Process</li><li data-key="b" data-correct="true"><input type="radio" name="q_99" value="b">Empowerment and Ownership</li><li data-key="c"><input type="radio" name="q_99" value="c">Continuous Improvement</li><li data-key="d"><input type="radio" name="q_99" value="d">Waste Elimination</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">13. TQM tools include scatter diagrams for what purpose?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_100" value="a">Prioritizing issues</li><li data-key="b" data-correct="true"><input type="radio" name="q_100" value="b">Analyzing variation relationships</li><li data-key="c"><input type="radio" name="q_100" value="c">Mapping processes</li><li data-key="d"><input type="radio" name="q_100" value="d">Collecting data</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">14. Six Sigma's Control phase answers: “How do we track the new process?” via what?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_101" value="a">Statistical process control</li><li data-key="b"><input type="radio" name="q_101" value="b">Brainstorming</li><li data-key="c"><input type="radio" name="q_101" value="c">Measurement validation</li><li data-key="d"><input type="radio" name="q_101" value="d">Root cause analysis</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">15. KAIZEN deals with continuous improvement, and BIS represents India in ISO; Six Sigma allows 3.4 DPMO—true statements?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_102" value="a">All</li><li data-key="b"><input type="radio" name="q_102" value="b">Only KAIZEN and BIS</li><li data-key="c"><input type="radio" name="q_102" value="c">Only Six Sigma</li><li data-key="d"><input type="radio" name="q_102" value="d">None</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">16. 5S's “Sort” (Seiri) removes unnecessary items; what KPI tracks 5S success?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_103" value="a">Defect rates</li><li data-key="b" data-correct="true"><input type="radio" name="q_103" value="b">Measurable objectives like space utilization</li><li data-key="c"><input type="radio" name="q_103" value="c">Cycle time</li><li data-key="d"><input type="radio" name="q_103" value="d">Inventory levels</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">17. Kanban cards represent single work items; what hierarchy places title and assignee as primary info?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_104" value="a">Secondary information</li><li data-key="b" data-correct="true"><input type="radio" name="q_104" value="b">Information Hierarchy Principle</li><li data-key="c"><input type="radio" name="q_104" value="c">Stage tracking</li><li data-key="d"><input type="radio" name="q_104" value="d">Time boundaries</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">18. TPM's 8 pillars include which for proactive equipment reliability?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_105" value="a">All 8: Autonomous Maintenance to Office TPM</li><li data-key="b"><input type="radio" name="q_105" value="b">Only Planned Maintenance</li><li data-key="c"><input type="radio" name="q_105" value="c">5S only</li><li data-key="d"><input type="radio" name="q_105" value="d">Kaizen alone</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">19. Lean Manufacturing's Value Stream Mapping eliminates what?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_106" value="a">Batch production</li><li data-key="b" data-correct="true"><input type="radio" name="q_106" value="b">Waste and accelerates cycle times</li><li data-key="c"><input type="radio" name="q_106" value="c">Continuous flow</li><li data-key="d"><input type="radio" name="q_106" value="d">Andon signals</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">20. Kanban controls what via small stock levels?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_107" value="a">Unlimited stockpiling</li><li data-key="b" data-correct="true"><input type="radio" name="q_107" value="b">Production or movement of items</li><li data-key="c"><input type="radio" name="q_107" value="c">Worker hiring</li><li data-key="d"><input type="radio" name="q_107" value="d">Meeting schedules</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">21. 5S Sustain follows Standardize; what mindset is essential?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_108" value="a">One-time project</li><li data-key="b" data-correct="true"><input type="radio" name="q_108" value="b">Continuous improvement with Kaizen</li><li data-key="c"><input type="radio" name="q_108" value="c">Ignore metrics</li><li data-key="d"><input type="radio" name="q_108" value="d">No training</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">22. TPM pillar “Focused Improvement” is also known as?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_109" value="a">Kaizen</li><li data-key="b"><input type="radio" name="q_109" value="b">Planned Maintenance</li><li data-key="c"><input type="radio" name="q_109" value="c">Quality Maintenance</li><li data-key="d"><input type="radio" name="q_109" value="d">Training</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">23. Lean core methods include JIT, Kaizen, 5S, TPM, Cellular—what's complete?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_110" value="a">JIT, Kaizen, 5S only</li><li data-key="b" data-correct="true"><input type="radio" name="q_110" value="b">Both sets</li><li data-key="c"><input type="radio" name="q_110" value="c">Six Sigma only</li><li data-key="d"><input type="radio" name="q_110" value="d">None</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">24. Kanban relates closest to which Lean tool?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_111" value="a">5S</li><li data-key="b" data-correct="true"><input type="radio" name="q_111" value="b">JIT</li><li data-key="c"><input type="radio" name="q_111" value="c">Poka-Yoke</li><li data-key="d"><input type="radio" name="q_111" value="d">TPM</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">25. Lean's Continuous Flow avoids what?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_112" value="a">Batch work</li><li data-key="b"><input type="radio" name="q_112" value="b">Single-piece flow</li><li data-key="c"><input type="radio" name="q_112" value="c">Customer pull</li><li data-key="d"><input type="radio" name="q_112" value="d">Waste reduction</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">26. TPM uses Reliability-Centered Maintenance (RCM) for what?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_113" value="a">Criticality-based requirements</li><li data-key="b"><input type="radio" name="q_113" value="b">Cost increases</li><li data-key="c"><input type="radio" name="q_113" value="c">Inventory buildup</li><li data-key="d"><input type="radio" name="q_113" value="d">Supplier conflicts</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">27. 5S “Shine” involves cleaning; what builds on predecessors?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_114" value="a">Random order</li><li data-key="b" data-correct="true"><input type="radio" name="q_114" value="b">Systematic steps</li><li data-key="c"><input type="radio" name="q_114" value="c">Ignore sort</li><li data-key="d"><input type="radio" name="q_114" value="d">No metrics</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">28. Lean benefits: deliver on demand, minimize inventory—includes?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_115" value="a">Maximize multi-skilled workers</li><li data-key="b" data-correct="true"><input type="radio" name="q_115" value="b">All listed</li><li data-key="c"><input type="radio" name="q_115" value="c">Flatten management only</li><li data-key="d"><input type="radio" name="q_115" value="d">Increase waste</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">29. Kanban cards include cycle time tracking as what info level?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a"><input type="radio" name="q_116" value="a">Primary</li><li data-key="b" data-correct="true"><input type="radio" name="q_116" value="b">Time Boundaries (secondary)</li><li data-key="c"><input type="radio" name="q_116" value="c">Detailed</li><li data-key="d"><input type="radio" name="q_116" value="d">None</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">30. TPM's Spare Parts Management minimizes what?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_117" value="a">Carrying costs with reorder points</li><li data-key="b"><input type="radio" name="q_117" value="b">Availability</li><li data-key="c"><input type="radio" name="q_117" value="c">Lead times</li><li data-key="d"><input type="radio" name="q_117" value="d">Storage</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">31. ISO 9001:2015 has 10 clauses vs 2008's 8; what replaced preventive actions?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_118" value="a">Risk-based thinking</li><li data-key="b"><input type="radio" name="q_118" value="b">Quality manual</li><li data-key="c"><input type="radio" name="q_118" value="c">Management rep</li><li data-key="d"><input type="radio" name="q_118" value="d">Procedures</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">32. ISO 14001:2015 Clause 9 covers what?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_119" value="a">Performance evaluation: monitoring, audits</li><li data-key="b"><input type="radio" name="q_119" value="b">Planning risks</li><li data-key="c"><input type="radio" name="q_119" value="c">Policy only</li><li data-key="d"><input type="radio" name="q_119" value="d">Improvement nonconformity</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">33. OSHA post-2020 emphasizes what for COVID?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_120" value="a">PPE, distancing, sanitation</li><li data-key="b"><input type="radio" name="q_120" value="b">Ignore falls</li><li data-key="c"><input type="radio" name="q_120" value="c">No training</li><li data-key="d"><input type="radio" name="q_120" value="d">Reduce enforcement</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">34. Annex SL in ISO 14001 is shared with?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_121" value="a">ISO 9001, 45001, 22301—all</li><li data-key="b"><input type="radio" name="q_121" value="b">ISO 9001 only</li><li data-key="c"><input type="radio" name="q_121" value="c">None</li><li data-key="d"><input type="radio" name="q_121" value="d">ISO 45001 only</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">35. ISO 9001:2015 Clause 4 is?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_122" value="a">Context of the organization</li><li data-key="b"><input type="radio" name="q_122" value="b">Leadership</li><li data-key="c"><input type="radio" name="q_122" value="c">Planning</li><li data-key="d"><input type="radio" name="q_122" value="d">Support</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">36. ISO 14001 requires documented EMS for what?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_123" value="a">Legal compliance, continual improvement</li><li data-key="b"><input type="radio" name="q_123" value="b">Ignore risks</li><li data-key="c"><input type="radio" name="q_123" value="c">No audits</li><li data-key="d"><input type="radio" name="q_123" value="d">Fixed policy</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">37. ISO 9001:2015 primary purpose?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_124" value="a">Quality Management Systems</li><li data-key="b"><input type="radio" name="q_124" value="b">Environmental only</li><li data-key="c"><input type="radio" name="q_124" value="c">Health safety</li><li data-key="d"><input type="radio" name="q_124" value="d">Risk only</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">38. OSHA 2020 strengthened fall protection via?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_125" value="a">Training and enforcement</li><li data-key="b"><input type="radio" name="q_125" value="b">Reduce PPE</li><li data-key="c"><input type="radio" name="q_125" value="c">Ignore COVID</li><li data-key="d"><input type="radio" name="q_125" value="d">No guidelines</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">39. ISO 14001 PDCA cycle includes what in Planning?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_126" value="a">Environmental aspects, risks</li><li data-key="b"><input type="radio" name="q_126" value="b">No measurement</li><li data-key="c"><input type="radio" name="q_126" value="c">Ignore stakeholders</li><li data-key="d"><input type="radio" name="q_126" value="d">Fixed operations</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">40. ISO 9001:2015 emphasizes what over documentation?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_127" value="a">Effectiveness, principles-based</li><li data-key="b"><input type="radio" name="q_127" value="b">Mandatory procedures</li><li data-key="c"><input type="radio" name="q_127" value="c">Quality manuals require</li><li data-key="d"><input type="radio" name="q_127" value="d">8 principles</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">41. ERP integrates modules like FI, CO, MM—what's SAP example?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_128" value="a">Financial Accounting, Controlling</li><li data-key="b"><input type="radio" name="q_128" value="b">HR only</li><li data-key="c"><input type="radio" name="q_128" value="c">CRM alone</li><li data-key="d"><input type="radio" name="q_128" value="d">None</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">42. SAP's Enterprise Controlling (EC) includes?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_129" value="a">Profit Center Accounting</li><li data-key="b"><input type="radio" name="q_129" value="b">Inventory only</li><li data-key="c"><input type="radio" name="q_129" value="c">Sales</li><li data-key="d"><input type="radio" name="q_129" value="d">Production</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">43. ERP example SAP S/4HANA uses what database?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_130" value="a">HANA in-memory</li><li data-key="b"><input type="radio" name="q_130" value="b">Oracle only</li><li data-key="c"><input type="radio" name="q_130" value="c">Flat files</li><li data-key="d"><input type="radio" name="q_130" value="d">No integration</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">44. SAP QM integrates with?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_131" value="a">MM, PP, SD, PM</li><li data-key="b"><input type="radio" name="q_131" value="b">Finance only</li><li data-key="c"><input type="radio" name="q_131" value="c">HR</li><li data-key="d"><input type="radio" name="q_131" value="d">None</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">45. SAP SCM includes?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_132" value="a">Advance Planning, Event Management</li><li data-key="b"><input type="radio" name="q_132" value="b">FI only</li><li data-key="c"><input type="radio" name="q_132" value="c">CO</li><li data-key="d"><input type="radio" name="q_132" value="d">EPM</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">46. ERP central component was?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_133" value="a">SAP ECC</li><li data-key="b"><input type="radio" name="q_133" value="b">R/3 only</li><li data-key="c"><input type="radio" name="q_133" value="c">S/4 only)</li><li data-key="d"><input type="radio" name="q_133" value="d">None</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">47. SAP SRM covers?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_134" value="a">Strategic Sourcing, Spend Analysis</li><li data-key="b"><input type="radio" name="q_134" value="b">Production</li><li data-key="c"><input type="radio" name="q_134" value="c">Quality</li><li data-key="d"><input type="radio" name="q_134" value="d">Maintenance</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">48. SAP PS is for?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_135" value="a">Project System</li><li data-key="b"><input type="radio" name="q_135" value="b">Materials</li><li data-key="c"><input type="radio" name="q_135" value="c">Sales</li><li data-key="d"><input type="radio" name="q_135" value="d">HR</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">49. ERP modules support transactions in?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_136" value="a">Critical business operations</li><li data-key="b"><input type="radio" name="q_136" value="b">Standalone apps</li><li data-key="c"><input type="radio" name="q_136" value="c">No integration</li><li data-key="d"><input type="radio" name="q_136" value="d">Manual only</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">50. SAP EHS is?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_137" value="a">Environment, Health, Safety</li><li data-key="b"><input type="radio" name="q_137" value="b">Finance</li><li data-key="c"><input type="radio" name="q_137" value="c">Controlling</li><li data-key="d"><input type="radio" name="q_137" value="d">CRM</li>
+      </ul>
+    </div>
+<h2>Extra</h2>
+
+    <div class="question">
+      <div class="qnum">51. SERVQUAL Gap 1 is between?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_138" value="a">Customer expectations and management perceptions</li><li data-key="b"><input type="radio" name="q_138" value="b">Delivery and communication</li><li data-key="c"><input type="radio" name="q_138" value="c">Perceptions and service quality</li><li data-key="d"><input type="radio" name="q_138" value="d">Zone of tolerance</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">52. CSAT score = (satisfied ratings / total) × 100%; 80/100 = ?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_139" value="a">80%</li><li data-key="b"><input type="radio" name="q_139" value="b">20%</li><li data-key="c"><input type="radio" name="q_139" value="c">50%</li><li data-key="d"><input type="radio" name="q_139" value="d">100%</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">53. Bitner's Servicescape ambient conditions include?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_140" value="a">Lighting, noise, scent</li><li data-key="b"><input type="radio" name="q_140" value="b">Layout only</li><li data-key="c"><input type="radio" name="q_140" value="c">Signs</li><li data-key="d"><input type="radio" name="q_140" value="d">Artifacts</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">54. SERVQUAL dimensions—most important per Parasuraman?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_141" value="a">Reliability</li><li data-key="b"><input type="radio" name="q_141" value="b">Responsiveness</li><li data-key="c"><input type="radio" name="q_141" value="c">Assurance</li><li data-key="d"><input type="radio" name="q_141" value="d">Empathy</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">55. Zone of Tolerance represents?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_142" value="a">Range of acceptable service quality</li><li data-key="b"><input type="radio" name="q_142" value="b">Price range</li><li data-key="c"><input type="radio" name="q_142" value="c">Geography</li><li data-key="d"><input type="radio" name="q_142" value="d">Regulations</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">56. Servicescape indirect effect influences?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_143" value="a">Perceptions of service quality</li><li data-key="b"><input type="radio" name="q_143" value="b">Mood only</li><li data-key="c"><input type="radio" name="q_143" value="c">Behavior direct</li><li data-key="d"><input type="radio" name="q_143" value="d">No impact</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">57. Customer satisfaction metrics include CSAT, NPS, CES—CSAT uses?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_144" value="a">4–5 scale as satisfied</li><li data-key="b"><input type="radio" name="q_144" value="b">Detractors only</li><li data-key="c"><input type="radio" name="q_144" value="c">Effort score</li><li data-key="d"><input type="radio" name="q_144" value="d">All</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">58. SERVQUAL measures gaps across 5 dimensions for?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_145" value="a">Service quality</li><li data-key="b"><input type="radio" name="q_145" value="b">Price</li><li data-key="c"><input type="radio" name="q_145" value="c">Product features</li><li data-key="d"><input type="radio" name="q_145" value="d">Location</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">59. Servicescape spatial layout affects?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_146" value="a">Functionality for customer goals</li><li data-key="b"><input type="radio" name="q_146" value="b">Ambient only</li><li data-key="c"><input type="radio" name="q_146" value="c">Symbols</li><li data-key="d"><input type="radio" name="q_146" value="d">No behavior</li>
+      </ul>
+    </div>
+
+    <div class="question">
+      <div class="qnum">60. Moments of customer–service interaction are?</div> 
+      <!-- qtext included in qnum for simplicity or separate? Let's separate if we can -->
+      <ul class="opts">
+        <li data-key="a" data-correct="true"><input type="radio" name="q_147" value="a">Critical incidents</li><li data-key="b"><input type="radio" name="q_147" value="b">Core failures</li><li data-key="c"><input type="radio" name="q_147" value="c">Recovery</li><li data-key="d"><input type="radio" name="q_147" value="d">Junction only</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+<script>
+  // Standard Exam Scripts ...
+  document.addEventListener('DOMContentLoaded', () => {
+    // Count
+    document.getElementById('totalCount').innerText = document.querySelectorAll('.question').length;
+    
+    document.getElementById('submitBtn').addEventListener('click', submitQuiz);
+    document.getElementById('resetBtn').addEventListener('click', () => location.reload());
+    
+    // Shuffle Options Logic
+    document.querySelectorAll('.question').forEach(q => {
+       const ul = q.querySelector('.opts');
+       if(ul) {
+           const lis = Array.from(ul.children);
+           for (let i = lis.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [lis[i], lis[j]] = [lis[j], lis[i]];
+           }
+           ul.innerHTML = '';
+           lis.forEach(li => ul.appendChild(li));
+       }
+       // Clicks
+       q.querySelectorAll('li').forEach(li => {
+         li.onclick = (e) => {
+           if(e.target.tagName !== 'INPUT') {
+             const r = li.querySelector('input');
+             if(r) r.checked = true;
+           }
+         }
+       });
+    });
+  });
+
+  function submitQuiz() {
+    const questions = document.querySelectorAll('.question');
+    let score = 0;
+    questions.forEach(q => {
+        const lis = q.querySelectorAll('.opts li');
+        lis.forEach(li => {
+            const radio = li.querySelector('input');
+            const isCorrect = li.hasAttribute('data-correct');
+            if(radio) radio.disabled = true;
+            li.classList.add('disabled');
+            
+            if (radio && radio.checked) {
+                if (isCorrect) {
+                   li.classList.add('correct-opt');
+                   addFeedback(li, "✔", "green");
+                   score++;
+                } else {
+                   li.classList.add('wrong-opt');
+                   addFeedback(li, "✖", "red");
+                }
+            }
+            if (isCorrect && (!radio || !radio.checked)) {
+                li.classList.add('correct-highlight');
+            }
+        });
+    });
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.innerText = `Score: ${score} / ${questions.length}`;
+    btn.style.background = score > (questions.length * 0.7) ? '#15803d' : '#b91c1c';
+  }
+  
+  function addFeedback(li, text) {
+      if(li.querySelector('.feedback-msg')) return;
+      const span = document.createElement('span');
+      span.className = 'feedback-msg';
+      span.textContent = text;
+      li.appendChild(span);
+  }
+</script>
+</body>
+</html>
